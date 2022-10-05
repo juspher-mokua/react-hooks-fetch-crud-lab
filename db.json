@@ -35,6 +35,19 @@
       "prompt": "Returning different elements from a component depending on the state of your application is known as _____ rendering.",
       "answers": ["voodoo", "conditional", "reactive", "controlled"],
       "correctIndex": 1
-    }
+    },
+    {
+      "id": 7,
+      "prompt": "A stranger walks into your house. What do you do/say?",
+      "answers": [
+        "\"Who dares enter unicorn land?\"",
+        "Call 112",
+        "Fly to safety.",
+        "\"706-888-999\""
+      ],
+      "correctIndex": 0
+      
+    }    
+    
   ]
 }

@@ -9,6 +9,14 @@ function QuestionItem({ question }) {
     </option>
   ));
 
+  function handleDelete(event) {
+    fetch(`http://localhost:4000/questions/${event.target.id}`, {
+      method: "DELETE"
+    })
+    .then(respo => respo.json())
+    .then((question) => console.log(question))
+  }
+
   return (
     <li>
       <h4>Question {id}</h4>
@@ -17,7 +25,7 @@ function QuestionItem({ question }) {
         Correct Answer:
         <select defaultValue={correctIndex}>{options}</select>
       </label>
-      <button>Delete Question</button>
+      <button id={id} onClick={handleDelete} >Delete Question</button>
     </li>
   );
 }
